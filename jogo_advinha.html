@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+
+<script>
+
+function pulaLinha()
+	{	document.write("<br><br>");	}
+function mostra(frase)
+	{	document.write(frase);
+		pulaLinha(); }
+function sorteia(n)
+	{	return  Math.round(Math.random() * n); }
+
+var numeroPensado = sorteia(20);
+var chute = parseInt(prompt("advinhe o número"));
+
+if(chute == numeroPensado)
+	{	mostra("Parabéns. Você acertou o número."); }
+else
+	{	mostra("Que pena. Parece que não foi dessa vez."); }
+
+</script>

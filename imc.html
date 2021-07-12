@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+	
+function pulaLinha()
+{	document.write("<br><br>")	}
+
+function mostra(frase)
+{	document.write(frase);	
+	pulaLinha();	}
+function calculaImc(altura, peso)
+{	return Math.round(peso / (altura * altura));		}
+
+var idade = parseInt(prompt("Digite sua idade"));
+var carteira = prompt("possue carteira de motorista?");
+
+if (idade >= 18 && carteira == ("sim"))
+	{	mostra("você pode dirigir");	}
+else
+	{	mostra("você não pode dirigir");	}
+
+</script>

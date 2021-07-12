@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+
+<script>
+	
+function pulaLinha() 
+{    document.write("<br><br>"); }
+
+function mostra(frase)
+{	document.write(frase);
+	pulaLinha(); }
+
+var tanque = 40;
+var caminhoComGasolina = 480;
+var consumoDeGasolina = caminhoComGasolina/tanque;
+
+mostra("o consumo de Gasolina foi: " + consumoDeGasolina + "Km/L ");
+    
+var caminhoComAlcool = 300;
+var consumoDeAlcool = caminhoComAlcool/tanque;
+    
+mostra("o consumo de Alcool foi: " + consumoDeAlcool + "Km/L ");  
+
+
+</script>
+
